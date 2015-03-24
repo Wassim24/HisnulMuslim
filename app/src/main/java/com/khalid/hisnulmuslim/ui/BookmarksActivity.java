@@ -1,45 +1,48 @@
-package com.khalid.hisnulmuslim;
+package com.khalid.hisnulmuslim.ui;
 
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.example.khalid.hisnulmuslim.R;
 
-public class AboutActivity extends ActionBarActivity {
+
+public class BookmarksActivity extends ActionBarActivity {
 
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_bookmarks);
 
         toolbar = (Toolbar) findViewById(R.id.my_action_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        TextView tvAboutUs = (TextView) findViewById(R.id.tvAboutUs);
-        // DocumentView tvAboutUs = (DocumentView) findViewById(R.id.tvAboutUs);
-        tvAboutUs.setVerticalScrollBarEnabled(true);
-        tvAboutUs.setText(Html.fromHtml(getString(R.string.about_us)));
-        tvAboutUs.setMovementMethod(LinkMovementMethod.getInstance());
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_about, menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_bookmarks, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        //int id = item.getItemId();
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

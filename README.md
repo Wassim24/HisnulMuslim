@@ -49,6 +49,7 @@ bookmarked.
 - [Font Awesome CSS Library](http://fortawesome.github.io/Font-Awesome/)
 - [Custom font for TextView](http://www.tutorialspoint.com/android/android_custom_fonts.htm)
 - [ActionBar in Preferences Activity](http://stackoverflow.com/questions/26439139/getactionbar-returns-null-in-preferenceactivity-appcompat-v7-21)
+- [How To Make Material Design Sliding Tabs](http://www.android4devs.com/2015/01/how-to-make-material-design-sliding-tabs.html)
 
 # To Do
 - Sort out the contents, there is a lot of problem with the Arabic vowels and sometimes the translations.

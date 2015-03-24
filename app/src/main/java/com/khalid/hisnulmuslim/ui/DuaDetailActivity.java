@@ -1,4 +1,4 @@
-package com.khalid.hisnulmuslim;
+package com.khalid.hisnulmuslim.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
