@@ -11,25 +11,27 @@ html {
   -o-background-size: cover;
   background-size: cover;
 	background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
   background-attachment: fixed;
 	background-color: black;
 }
 
 body {
-	margin-top: 60px;
 	color: white;
+	margin-top: 50px;
 }
 
 .title {
 	font-family: 'Roboto Thin', sans-serif;
-  font-weight: 900;
-	font-size: 3rem;
+  /*font-weight: 900;
+	font-size: 3rem;*/
 	color: white;
   text-transform: uppercase;
 }
+
+.mobile-title, .mobile-screenshot {
+	text-align: center;
+}
+
 
 header {
 	color: white;
